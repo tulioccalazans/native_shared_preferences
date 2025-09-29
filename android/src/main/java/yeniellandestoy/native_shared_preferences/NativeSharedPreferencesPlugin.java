@@ -5,17 +5,17 @@ import android.content.Context;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodChannel;
-import io.flutter.plugin.common.PluginRegistry;
+//import io.flutter.plugin.common.PluginRegistry;
 
 /** NativeNativeSharedPreferencesPlugin */
 public class NativeSharedPreferencesPlugin implements FlutterPlugin {
   private static final String CHANNEL_NAME = "native_shared_preferences";
   private MethodChannel channel;
 
-  public static void registerWith(PluginRegistry.Registrar registrar) {
-    final NativeSharedPreferencesPlugin plugin = new NativeSharedPreferencesPlugin();
-    plugin.setupChannel(registrar.messenger(), registrar.context());
-  }
+//  public static void registerWith(PluginRegistry.Registrar registrar) {
+//    final NativeSharedPreferencesPlugin plugin = new NativeSharedPreferencesPlugin();
+//    plugin.setupChannel(registrar.messenger(), registrar.context());
+//  }
 
   @Override
   public void onAttachedToEngine(FlutterPlugin.FlutterPluginBinding binding) {
